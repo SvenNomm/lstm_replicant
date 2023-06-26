@@ -176,6 +176,7 @@ plt.plot(rmse_test, color = 'green', linewidth = 0.5)
 plt.plot(rmse_train, color = 'darkviolet', linewidth = 0.5)
 plt.show()
 
+
 def goodness_descriptor(test_y, hat_y):
     mse = mean_squared_error(test_y, hat_y)
     rho = np.corrcoef(test_y, hat_y)[0, 1]
